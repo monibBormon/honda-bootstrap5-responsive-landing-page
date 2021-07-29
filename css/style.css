@@ -1,6 +1,11 @@
-/* google font  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/*------------
+ google font  
+ -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+/*------- 
+default css
+-------------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@ body{
     line-height: 1;
 }
 
-.h-btn{
+.h-btn,.quote-form button{
     background-color: #E76F51;
     color: #fff;
     display: inline-block;
@@ -20,8 +25,29 @@ body{
     border-radius: 5px;
     text-decoration: none;
 }
+img{
+    width: 100%;
+}
 .h-btn:hover{
     color: #fff;
+}
+/* section title  */
+.section-title h3{
+    font-size: 48px;
+}
+.section-title p {
+    color: #E76F51;
+    margin-bottom: -5px;
+    font-weight: 600;
+}
+.section-title > span {
+    background-color: #E76F51;
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+}
+.section-title h3 span{
+    color: #E76F51;
 }
 .ptb-35{
     padding: 35px 0;
@@ -35,10 +61,9 @@ body{
 
 
 
-
-
-
-/* header css */
+/*-----------
+ header css 
+ --------------------*/
 .header-area{
     background-color: #264653;
 }
@@ -58,30 +83,20 @@ body{
     font-size: 48px;
     line-height: 1;
 }
+.hero-text p{
+    line-height: 24px;
+}
 
-/* feature area css */
-.section-title h3{
-    font-size: 48px;
-}
-.section-title p {
-    color: #E76F51;
-    margin-bottom: -5px;
-    font-weight: 600;
-}
-.section-title > span {
-    background-color: #E76F51;
-    width: 60px;
-    height: 2px;
-    display: inline-block;
-}
-.section-title h3 span{
-    color: #E76F51;
-}
+/*---------
+ feature area css
+ ------------------------ */
 .feature-gray{
     filter: grayscale(100%);
 }
 
-/* blog css  */
+/*-----------
+ blog css
+ -------------------  */
 .single-blog h4{
     font-size: 24px;
 }
@@ -90,7 +105,9 @@ body{
     line-height: 2;
 }
 
-/* testimonial css */
+/*----------
+ testimonial css
+ --------------------- */
 .testimonial-box p{
     color: #6C6C6C;
     letter-spacing: .2px;
@@ -104,8 +121,106 @@ body{
 .testimonial-box span{
     font-size: 14px;
 }
+.client-rating i {
+    color: #E67C40;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
 img.client-img {
     width: 153px;
     height: 153px;
     border-radius: 50%;
+}
+
+/*-------
+ faq css 
+ -----------------*/
+
+.faq-accordion .accordion-button{
+    font-size: 20px;
+    color: #383838;
+    font-weight: 500;
+}
+.faq-accordion .accordion-body{
+    color: #7E848C;
+    line-height: 2;
+}
+
+
+/*-------
+ quote css
+ -------------- */
+.quote-form label {
+    margin-bottom: 10px;
+}
+.quote-form input, .quote-form textarea {
+    width: 320px;
+    outline: none;
+    height: 45px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 0;
+    border-bottom: 2px solid #E76F51;
+    border-radius: 5px;
+}
+.quote-form button{
+    outline: none;
+    border: none;
+}
+.quote-bg{
+    position: relative;
+}
+.quote-bg::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5;
+}
+
+
+/*---------
+ footer css 
+ ----------------*/
+.footer-area{
+    background-color: #0B0D17;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 5px;
+}
+.footer-links ul{
+    padding: 0;
+    margin: 0;
+}
+.footer-links ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+.footer-links li a {
+    display: inline-block;
+}
+.app-img img {
+    width: 120px;
+}
+
+
+
+
+/*---------
+ responsive media query css
+ ---------------------------------- */
+ /* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .navbar-light .navbar-toggler {
+        margin-top: -40px;
+    }
+    .hero-text h2 {
+        font-size: 36px;
+    }
+    .section-title h3 {
+        font-size: 36px;
+    }
 }
