@@ -1,0 +1,111 @@
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.h-btn{
+    background-color: #E76F51;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.h-btn:hover{
+    color: #fff;
+}
+.ptb-35{
+    padding: 35px 0;
+}
+.ptb-40{
+    padding: 40px 0;
+}
+.ptb-50{
+    padding: 50px 0;
+}
+
+
+
+
+
+
+/* header css */
+.header-area{
+    background-color: #264653;
+}
+.logo a {
+    text-decoration: none;
+    color: #E76F51;
+    font-size: 36px;
+    font-variant: small-caps;
+}
+.logo a span{
+    color: #fff;
+}
+.hero-text{
+    color: #E0E0E0;
+}
+.hero-text h2 {
+    font-size: 48px;
+    line-height: 1;
+}
+
+/* feature area css */
+.section-title h3{
+    font-size: 48px;
+}
+.section-title p {
+    color: #E76F51;
+    margin-bottom: -5px;
+    font-weight: 600;
+}
+.section-title > span {
+    background-color: #E76F51;
+    width: 60px;
+    height: 2px;
+    display: inline-block;
+}
+.section-title h3 span{
+    color: #E76F51;
+}
+.feature-gray{
+    filter: grayscale(100%);
+}
+
+/* blog css  */
+.single-blog h4{
+    font-size: 24px;
+}
+.single-blog p{
+    color: #6C6C6C;
+    line-height: 2;
+}
+
+/* testimonial css */
+.testimonial-box p{
+    color: #6C6C6C;
+    letter-spacing: .2px;
+    line-height: 2;
+}
+.testimonial-box h4{
+    color: #2DAAF1;
+    font-size: 14px;
+    font-weight: 600;
+}
+.testimonial-box span{
+    font-size: 14px;
+}
+img.client-img {
+    width: 153px;
+    height: 153px;
+    border-radius: 50%;
+}
